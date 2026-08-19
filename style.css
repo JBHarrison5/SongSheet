@@ -51,10 +51,14 @@ body {
 
 .container h1 {
   color: #7b3040;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: normal;
   margin: 0;
-  white-space: nowrap;
+  line-height: 1.1;
+}
+
+.container h1 span {
+  display: block;
 }
 
 .container p {
