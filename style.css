@@ -1,164 +1,61 @@
 /* =========================================
-   WEDDING SINGALONG - MAIN STYLESHEET
+   SONG MENU
    ========================================= */
 
-* {
-  box-sizing: border-box;
-}
-
-
-/* =========================================
-   GENERAL PAGE
-   ========================================= */
-
-body {
-  margin: 0;
-  background: #fffaf2;
-  color: #3b3030;
-  font-family: Georgia, "Times New Roman", serif;
-}
-
-
-/* =========================================
-   SONG PAGE
-   ========================================= */
-
-.page {
-  max-width: 750px;
-  margin: auto;
-  padding: 30px 20px 50px;
-}
-
-
-/* =========================================
-   HEADER
-   ========================================= */
-
-header {
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 60px auto;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-h1 {
+.rings {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.container h1 {
   color: #7b3040;
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: normal;
-  margin: 0 0 5px;
+  margin: 0;
 }
 
-.artist {
+.container p {
   color: #806f6f;
-  font-style: italic;
-}
-
-
-/* =========================================
-   LYRICS
-   ========================================= */
-
-.lyrics {
-  background: #fffdf9;
-  border: 1px solid #eadfce;
-  border-radius: 18px;
-  padding: 20px 15px;
-
-  box-shadow: 0 8px 25px rgba(80, 50, 40, 0.08);
-
   font-size: 1.2rem;
-  line-height: 1.6;
-
-  white-space: pre-line;
-  text-align: left;
-}
-
-
-/* =========================================
-   CHORUS
-   ========================================= */
-
-.chorus {
   font-style: italic;
-  color: #7b3040;
-  margin: 4px 0;
+  margin: 15px 0 40px;
 }
 
 
-/* =========================================
-   LARGE MENU / NEXT BUTTON
-   ========================================= */
+/* SONG LINKS */
 
-.next {
+.song-button {
   display: block;
-  margin-top: 35px;
-  padding: 22px;
+  width: 100%;
+
+  padding: 22px 15px;
+  margin: 15px 0;
+
+  border-radius: 15px;
 
   background: #7b3040;
   color: white;
 
   text-decoration: none;
-  text-align: center;
-
-  border-radius: 15px;
-
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.3rem;
 
   box-shadow: 0 5px 15px rgba(80, 40, 40, 0.15);
+
+  transition: transform 0.1s ease,
+              background 0.2s ease;
 }
 
-.next:active {
+.song-button:hover {
+  background: #652633;
+}
+
+.song-button:active {
   transform: scale(0.98);
-}
-
-
-/* =========================================
-   SMALL NEXT SONG BUTTON
-   ========================================= */
-
-.home {
-  display: block;
-  width: fit-content;
-
-  margin: 18px auto 0;
-  padding: 10px 22px;
-
-  color: #7b3040;
-
-  border: 1px solid #7b3040;
-  border-radius: 20px;
-
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.home:active {
-  transform: scale(0.97);
-}
-
-
-/* =========================================
-   MOBILE
-   ========================================= */
-
-@media (max-width: 600px) {
-
-  .page {
-    padding: 25px 12px 40px;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  .lyrics {
-    font-size: 1.1rem;
-    line-height: 1.55;
-    padding: 18px 14px;
-  }
-
-  .next {
-    font-size: 1.25rem;
-    padding: 20px;
-  }
-
 }
