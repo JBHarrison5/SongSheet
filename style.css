@@ -251,3 +251,10 @@ header {
     padding: 20px;
   }
 }
+/* Smaller lyrics for Lying Eyes */
+
+.lying-eyes-lyrics {
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
