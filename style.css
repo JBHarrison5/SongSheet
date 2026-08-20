@@ -49,7 +49,7 @@ body {
   height: 110%;
   display: block;
   object-fit: cover;
-  transform: translate(-5%, -3%);
+  transform: translate(-5%, -1%);
 }
 
 .container h1 {
